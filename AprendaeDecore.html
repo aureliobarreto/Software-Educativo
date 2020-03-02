@@ -1,0 +1,324 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+  <title>
+  Learn & Decorate - Aprenda e Decore
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Aurélio Barreto, Rogério Gabriel">
+  <!-- Incluindo o CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="img/ds.png">
+
+   <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  
+  <!-- Incluindo o JS -->
+  <script type="text/javascript" src="js/moveObj.js"></script>
+
+  <script type="text/javascript" src="js/tarefaSelectObj.js"></script>
+
+</head>
+<body>
+ <body>
+
+    <div id="logo">   
+      <header>
+        <img class="img-fluid" src="img/logonew.png" alt="Responsive image">
+        <a href="index.html" title="Aprenda e Decore"> </a> 
+        
+      </header>
+    </div>
+
+    <div id="main">
+
+      <!-- Barra de navegação lateral -->
+      <nav id="atividades">
+        
+          <img class="img-fluid" src="img/button_atividades.png" alt="Responsive image">
+        
+
+        <a href="" id="modal1"  data-toggle="modal" data-target="#exampleModalLong">
+          <img class="img-fluid" src="img/button_brinquedos.png" alt="Responsive image">
+        </a>
+
+        <a href=""  data-toggle="modal" data-target="#exampleModalLong1">
+          <img class="img-fluid" src="img/button_animais.png" alt="Responsive image">
+        </a>
+
+        <a href=""  data-toggle="modal" data-target="#exampleModalLong2">
+          <img class="img-fluid" src="img/button_loja.png" alt="Responsive image">
+        </a>
+
+      </nav>
+  
+      <!-- Centro da pagina -->
+      <div id="conteudo" >
+
+        <!-- Teste -->
+        <div id="test" width="100" height="100" class="dragme"> </div>
+
+        <div id="test2" width="100" height="100" class="dragme"> </div>
+
+        <div id="test3" width="100" height="100" class="dragme"> </div>
+
+        <div id="test4" width="100" height="100" class="dragme"> </div>
+
+        <div id="test5" width="100" height="100" class="dragme"> </div>
+
+        <div id="test6" width="100" height="100" class="dragme"> </div>
+
+        <div id="test7" width="100" height="100" class="dragme"> </div>
+
+        <div id="test8" width="100" height="100" class="dragme"> </div>
+
+      </div>
+
+      <!-- Barra Lateral -->
+      <div id="lateral"> 
+        <!-- Introdução da pontuação no NAV direito -->
+        <div id="contador">
+            <div class="cont_sub0">
+                <h4>Pontuação <span id="span" name="resultado">00</span></h4>
+          </div>
+           
+        </div>
+      <!-- Final - Introdução da pontuação no NAV direito -->
+      </div>
+
+      <div id="organ"></div>
+
+    </div>
+
+    <!-- Rodape -->
+    <div id="Rodape"> 
+        <footer>Learn & Decorate - Todos os direitos reservados</footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+      <div class="modal-header">
+        <!-- Titulo -->
+        <h5 class="modal-title" id="exampleModalLongTitle">
+          <img class="img-fluid" src="img/button_atividades.png" alt="Responsive image">
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <!-- palavra -->
+          
+            <div id="tarefa">
+              <img src="img/representa-ball.png" alt="">
+            </div>
+            
+            <div class="borda">
+              <div class="im1">
+                <img src="img/lampada-apagada.png" id="luz" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" alt="">
+              </div>
+              
+              <div class="im2">  
+                <img src="img/cubo.png" id="cubo" onclick="alert('Clicou no objeto incorreto')" alt="">
+              </div>
+
+
+              <div class="im5">  
+                <img src="img/ball.png" id="cubo" onclick="mudaCubo()" alt="">
+              </div>
+
+              <div class="im6">  
+                <img src="img/casa.png" id="cubo" onclick="alert('Clicou no objeto incorreto')" alt="">
+              </div>
+
+              <div class="im7">  
+                <img src="img/carrinho.png" id="cubo" onclick="alert('Clicou no objeto incorreto')" alt="">
+              </div>
+
+              <div class="im8">  
+                <img src="img/skate.png" id="cubo" onclick="alert('Clicou no objeto incorreto')" alt="">
+              </div>
+
+              <div class="im9">  
+                <img src="img/bike.png" id="cubo" onclick="alert('Clicou no objeto incorreto')" alt="">
+              </div>
+
+              <div class="im10">  
+                <img src="img/urso.png" id="cubo" onclick="alert('Clicou no objeto incorreto')" alt="">
+              </div>
+
+
+          </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Voltar ao Ambiente</button>
+      </div>
+      </div>
+    </div>
+    </div>
+    </body>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+      <div class="modal-header">
+        <!-- Titulo -->
+        <h5 class="modal-title" id="exampleModalLongTitle">
+          <img class="img-fluid" src="img/button_animais.png" alt="Responsive image">
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+
+          <!-- palavra -->
+          <div id="tarefa2">
+            <img src="img/imagem-represente-dog.png" alt="">
+          </div>
+          
+          <div class="borda">
+            <div class="im1">
+                <img src="img/porco.png" id="cubo" onclick="alert('Clicou no animal incorreto')" alt="">
+              </div>
+              
+              <div class="im2">  
+                <img src="img/galinha.png" id="cubo" onclick="alert('Clicou no animal incorreto')" alt="">
+              </div>
+
+
+              <div class="im5">  
+                <img src="img/cachorro.png" id="cubo" onclick="mudaCubo()" alt="">
+              </div>
+
+              <div class="im6">  
+                <img src="img/leao.png" id="cubo" onclick="alert('Clicou no animal incorreto')" alt="">
+              </div>
+
+              <div class="im7">  
+                <img src="img/gato.png" id="cubo" onclick="alert('Clicou no animal incorreto')" alt="">
+              </div>
+
+              <div class="im8">  
+                <img src="img/elefante.png" id="cubo" onclick="alert('Clicou no animal incorreto')" alt="">
+              </div>
+
+              <div class="im9">  
+                <img src="img/ornitorrinco.png" id="cubo" onclick="alert('Clicou no animal incorreto')" alt="">
+              </div>
+
+              <div class="im10">  
+                <img src="img/urso.png" id="cubo" onclick="alert('Clicou no animal incorreto')" alt="">
+              </div>
+          </div>
+            <!-- final -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Voltar ao Ambiente</button>
+      </div>
+      </div>
+    </div>
+    </div>
+    </body>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+      <div class="modal-header">
+        <!-- Titulo -->
+        <h5 class="modal-title" id="exampleModalLongTitle">
+          <img class="img-fluid" src="img/button_loja.png" alt="Responsive image">
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+
+          <!-- palavra -->
+          <div id="loja">
+            <img src="img/button_trocar-pontuacao-por-objetos.png" alt="">
+          </div>
+          
+          <div class="borda">
+
+              <div class="im1">
+                <a href="javascript:image('porco', 'test7');">
+                  <img src="img/porco.png" id="luz" alt="">
+                </a> 
+              </div>
+              
+              <div class="im2">
+                <a href="javascript:image('galinha', 'test');">
+                  <img src="img/galinha.png" id="cubo" alt="">
+                </a>  
+              </div>
+
+
+              <div class="im5"> 
+                <a href="javascript:image('cachorro', 'test2');">
+                  <img src="img/cachorro.png" id="cubo" alt="">
+                </a>  
+              </div>
+
+              <div class="im6">
+                <a href="javascript:image('leao', 'test3');">
+                  <img src="img/leao.png" id="cubo" alt="">
+                </a>   
+              </div>
+
+              <div class="im7">
+                <a href="javascript:image('gato', 'test4');">
+                  <img src="img/gato.png" id="cubo" alt="">
+                </a> 
+              </div>
+
+              <div class="im8">
+                <a href="javascript:image('elefante', 'test8');">
+                  <img src="img/elefante.png" id="cubo" alt="">
+                </a>   
+              </div>
+
+              <div class="im9">
+                <a href="javascript:image('ornitorrinco', 'test5');">
+                  <img src="img/ornitorrinco.png" id="cubo" alt="">
+                </a>  
+              </div>
+
+              <div class="im10">
+                <a href="javascript:image('casa', 'test6');">
+                  <img src="img/casa.png" id="cubo" alt="">
+                </a> 
+              </div>
+          </div>
+            <!-- final -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Voltar ao Ambiente</button>
+      </div>
+      </div>
+    </div>
+    </div>
+</body>
+</html>

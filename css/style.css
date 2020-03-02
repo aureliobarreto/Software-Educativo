@@ -1,0 +1,291 @@
+.dragme{position:relative;}
+
+* {
+    box-sizing: border-box; 
+}
+body {
+  display: flex;
+  min-height: 141.5vh;
+  flex-direction: column;
+  margin: 0;
+}
+.dragme{
+  position: relative;
+}
+#main {
+  display: flex;
+  flex: 1;
+}
+
+
+/* CSS referente a navegação à esquerda */
+#atividades{ 
+  background: white;
+  border-width: thick;
+  border-style:double;
+  border-color:#00A2E8;
+  float: left;
+  width: 250px; 
+  height: 750px;
+} 
+  /*Nav lateral esquerda*/
+#atividades .img-fluid{
+  padding: 20px;
+} 
+
+/* DIV mãe */
+
+#main {
+    display: flex;
+    flex: 1;
+}
+
+/* Logo (Topo da página) */
+#logo {
+  display: flex;
+  flex: 0 0 10vw;
+  background: #00A2E8;
+  height: 171px;
+}
+
+#logo li a{
+  color: #000;
+  font-family: 'Arial';
+  text-decoration: none;
+  font-size: 35px;
+  float: right;
+  padding: 10px;
+  right: 0;
+}
+/*
+#logo > header{
+    height: 30vh;
+    width: 1366px;
+    background-color: #00A2E8;
+    position: fixed;
+}
+*/
+
+
+/* Barra Lateral à direita */
+#lateral{
+  float: right;
+  background: #00A2E8;
+  width: 200px; 
+}
+
+/* Area de decoração - Conteúdo central */
+#conteudo{
+  width: 1000px; 
+  height: 750px;
+  float: left;
+  border-width: thick;
+  border-style:double;
+  border-color:#00A2E8;
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+}
+#organ{
+  clear: both;
+}
+
+/* Rodapé */
+footer {
+  background: #1b9a96;
+  height: 5vh;
+  margin:0;
+}
+
+/* Modal - Janela de tarefas */
+
+.modal-header{
+  background: #00A2E8;
+
+}
+
+
+.modal-footer{
+  background:#00A2E8;
+
+}
+.btn{
+  background: #ffff00;
+
+}
+
+.cont_sub0 h4{
+
+  color: yellow;
+  font-family: Impact, fantasy;
+  text-decoration: none;
+  font-size: 15px;
+  float: left;
+  padding: 10px;
+  background: #00A2E8;
+  margin: 10px;
+  border-width: thick;
+  border-style:double;
+  border-color:white;
+  border-radius: 10px;
+  width: 120px;
+  
+}
+
+#atv1{
+  color: white;
+  font-family: 'Arial';
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+}
+
+#tarefa{
+
+  height: 50px;
+  width: 200px;
+  float: right top;
+  padding-left: 30px;
+
+}
+
+#tarefa2{
+
+  height: 50px;
+  width: 200px;
+  float: right top;
+  padding-left: 30px;
+
+}
+
+#loja{
+
+  height: 50px;
+  width: 500px;
+  float: left top;
+  padding-left: 50px;
+}
+
+#contador{
+  padding: 30px;
+}
+
+.im1 {
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin-left: 85px;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+.im2 {
+   height: 50px;
+  width: 50px;
+  float: left;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+
+.im5 {
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin-left: 85px;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+.im6 {
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+.im7 {
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin-left: 85px;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+.im8 {
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+.im9 {
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin-left: 85px;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+.im10 {
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+.img1 {
+  height: 50px;
+  width: 20px;
+  float: left;
+  margin-right: 10px;
+
+}
+
+.img2 {
+  height: 50px;
+  width: 20px;
+  float: left;
+  margin-left: 50px;
+  margin-top: 7px;
+}
+#cubo{
+  height: 70px;
+  width: 70px;
+}
+
+#luz{
+  height: 70px;
+  width: 70px;
+}
+
+.modal-body {
+  display: flex;
+  height: 500px;
+  width: 200px;
+  margin: 0;
+}
+
+.borda{
+
+  width: 430px; 
+  height: 400px;
+  float: left;
+  border-width: thick;
+  border-style:double;
+  border-color:#00A2E8;
+  overflow: hidden;
+  position: absolute;
+  padding-left: : 30px;
+}
+
+
+
